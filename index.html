@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>浪愛延續 - 愛心捐贈平台</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Microsoft JhengHei, sans-serif;
+            /* 暖色木質感背景圖 (示意) */
+            background: linear-gradient(rgba(255, 235, 235, 0.7), rgba(255, 235, 235, 0.7)), 
+                        url('https://images.unsplash.com/photo-1513512213411-530566af25f1?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            color: #8d6e63;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* 透明卡片樣式 */
+        .photo-card {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .btn-enter {
+            margin-top: 40px;
+            padding: 15px 40px;
+            background-color: #f8bbd0; /* 淺粉色 */
+            color: #880e4f;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(248, 187, 208, 0.4);
+            transition: 0.3s;
+        }
+
+        .btn-enter:hover {
+            background-color: #f48fb1;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>遇見霓霓與牠的朋友</h1>
+    <p>紀錄流浪貓的日常，用愛心填滿牠們的小碗。</p>
+</header>
+
+<div class="card-container">
+    <div class="photo-card">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=60" alt="貓咪攝影 1">
+        <p style="color: #5d4037;">午後的陽光</p>
+    </div>
+    <div class="photo-card">
+        <img src="https://images.unsplash.com/photo-1573865668131-974070713b9b?auto=format&fit=crop&w=500&q=60" alt="貓咪攝影 2">
+        <p style="color: #5d4037;">草叢裡的守望者</p>
+    </div>
+    <div class="photo-card">
+        <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=500&q=60" alt="貓咪攝影 3">
+        <p style="color: #5d4037;">暖冬的哈欠</p>
+    </div>
+</div>
+
+<a href="profile.html" class="btn-enter">點擊查看 霓霓 的近況</a>
+
+</body>
+</html>
